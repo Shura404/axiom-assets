@@ -1,0 +1,68 @@
+{
+  "nombre": "axiom-assets",
+  "actualizado": "2026-11-13",
+  "base_raw": "https://raw.githubusercontent.com/Shura404/axiom-assets/main/",
+  "paquetes": [
+    {
+      "id": "inter",
+      "tipo": "fuente",
+      "version": "4.1",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/inter-OFL-1.1.txt",
+      "carpetas": {
+        "web": "fonts/inter/web (woff2 estáticas, 39)",
+        "variable": "fonts/inter/variable (ttf variable, normal e itálica)",
+        "ttf": "fonts/inter/ttf (estáticas, 36)",
+        "otf": "fonts/inter/otf (estáticas, 36)"
+      },
+      "omitido": "Inter.ttc y extras/woff-hinted (redundantes); disponibles en el zip original"
+    },
+    {
+      "id": "jetbrains-mono",
+      "tipo": "fuente",
+      "version": "2.304",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/jetbrains-mono-OFL-1.1.txt",
+      "carpetas": {
+        "web": "fonts/jetbrains-mono/web (woff2, 16)",
+        "variable": "fonts/jetbrains-mono/variable (ttf variable; renombrados sin corchetes)",
+        "ttf": "fonts/jetbrains-mono/ttf (estáticas, 32)"
+      }
+    },
+    {
+      "id": "lucide",
+      "tipo": "iconos",
+      "version": "sin versión fija (descarga del repo, 2026-11)",
+      "licencia": "ISC",
+      "licencia_archivo": "licenses/lucide-ISC.txt",
+      "iconos": 2052,
+      "zip": "icons/lucide/lucide-svg.zip",
+      "indice": "icons/lucide/index.json"
+    },
+    {
+      "id": "phosphor",
+      "tipo": "iconos",
+      "version": "2.1.1 (@phosphor-icons/core)",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/phosphor-MIT.txt",
+      "iconos_por_peso": 1512,
+      "pesos": [
+        "regular",
+        "bold",
+        "fill",
+        "light",
+        "thin",
+        "duotone"
+      ],
+      "zips": {
+        "regular": "icons/phosphor/phosphor-regular.zip",
+        "bold": "icons/phosphor/phosphor-bold.zip",
+        "fill": "icons/phosphor/phosphor-fill.zip",
+        "light": "icons/phosphor/phosphor-light.zip",
+        "thin": "icons/phosphor/phosphor-thin.zip",
+        "duotone": "icons/phosphor/phosphor-duotone.zip"
+      },
+      "indice": "icons/phosphor/index.json"
+    }
+  ]
+}
