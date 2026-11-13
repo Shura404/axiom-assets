@@ -8,6 +8,8 @@ El índice general está en `catalog.json`.
 
 ## Contenido
 
+<!-- PAQUETES:INICIO -->
+
 | Paquete | Tipo | Versión | Licencia |
 |---|---|---|---|
 | Inter | Fuente | 4.1 | OFL 1.1 |
@@ -15,7 +17,11 @@ El índice general está en `catalog.json`.
 | Lucide | Iconos SVG (2052) | descarga del repo, 2026-11 | ISC |
 | Phosphor | Iconos SVG (1512 por peso, 6 pesos) | 2.1.1 | MIT |
 
+<!-- PAQUETES:FIN -->
+
 ## Estructura
+
+<!-- ESTRUCTURA:INICIO -->
 
 ```
 inter/             web/ (woff2 + inter.css) · variable/ · ttf/ · otf/
@@ -27,6 +33,8 @@ licenses/          licencias de cada paquete
 catalog.json       índice general
 _headers           CORS y caché para Cloudflare Pages
 ```
+
+<!-- ESTRUCTURA:FIN -->
 
 Inter: no se incluyen `Inter.ttc` ni `extras/woff-hinted` (son redundantes con el resto). Las fuentes variables de JetBrains Mono se renombraron sin corchetes (`JetBrainsMono-Variable.ttf`) para que las URL no necesiten codificación. `inter/web/inter.css` es el CSS oficial de Inter con todos los `@font-face` listos (usa rutas relativas).
 
