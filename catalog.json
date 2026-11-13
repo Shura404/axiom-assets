@@ -10,10 +10,10 @@
       "licencia": "OFL-1.1",
       "licencia_archivo": "licenses/inter-OFL-1.1.txt",
       "carpetas": {
-        "web": "fonts/inter/web (woff2 estáticas, 39)",
-        "variable": "fonts/inter/variable (ttf variable, normal e itálica)",
-        "ttf": "fonts/inter/ttf (estáticas, 36)",
-        "otf": "fonts/inter/otf (estáticas, 36)"
+        "web": "inter/web (woff2, 38, más inter.css con los @font-face listos)",
+        "variable": "inter/variable (ttf variable, normal e itálica)",
+        "ttf": "inter/ttf (estáticas, 36)",
+        "otf": "inter/otf (estáticas, 36)"
       },
       "omitido": "Inter.ttc y extras/woff-hinted (redundantes); disponibles en el zip original"
     },
@@ -24,9 +24,9 @@
       "licencia": "OFL-1.1",
       "licencia_archivo": "licenses/jetbrains-mono-OFL-1.1.txt",
       "carpetas": {
-        "web": "fonts/jetbrains-mono/web (woff2, 16)",
-        "variable": "fonts/jetbrains-mono/variable (ttf variable; renombrados sin corchetes)",
-        "ttf": "fonts/jetbrains-mono/ttf (estáticas, 32)"
+        "web": "jetbrains-mono/web (woff2, 16)",
+        "variable": "jetbrains-mono/variable (ttf variable; renombrados sin corchetes)",
+        "ttf": "jetbrains-mono/ttf (estáticas, 32)"
       }
     },
     {
@@ -46,14 +46,7 @@
       "licencia": "MIT",
       "licencia_archivo": "licenses/phosphor-MIT.txt",
       "iconos_por_peso": 1512,
-      "pesos": [
-        "regular",
-        "bold",
-        "fill",
-        "light",
-        "thin",
-        "duotone"
-      ],
+      "pesos": ["regular", "bold", "fill", "light", "thin", "duotone"],
       "zips": {
         "regular": "icons/phosphor/phosphor-regular.zip",
         "bold": "icons/phosphor/phosphor-bold.zip",

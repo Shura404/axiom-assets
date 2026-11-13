@@ -2,5 +2,8 @@
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=86400
 
-/fonts/*
+/inter/*
+  Cache-Control: public, max-age=2592000
+
+/jetbrains-mono/*
   Cache-Control: public, max-age=2592000
