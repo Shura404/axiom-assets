@@ -1,6 +1,6 @@
 {
   "nombre": "axiom-assets",
-  "actualizado": "2026-11-13",
+  "actualizado": "2026-11-14",
   "base_raw": "https://raw.githubusercontent.com/Shura404/axiom-assets/main/",
   "paquetes": [
     {
@@ -56,6 +56,20 @@
         "duotone": "icons/phosphor/phosphor-duotone.zip"
       },
       "indice": "icons/phosphor/index.json"
+    },
+    {
+      "id": "heroicons",
+      "tipo": "iconos",
+      "version": "2.2.0",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/heroicons-MIT.txt",
+      "iconos_por_peso": 324,
+      "pesos": ["outline", "solid"],
+      "zips": {
+        "outline": "icons/heroicons/heroicons-outline.zip",
+        "solid": "icons/heroicons/heroicons-solid.zip"
+      },
+      "indice": "icons/heroicons/index.json"
     }
   ]
 }

@@ -16,6 +16,7 @@ El índice general está en `catalog.json`.
 | JetBrains Mono | Fuente | 2.304 | OFL 1.1 |
 | Lucide | Iconos SVG (2052) | descarga del repo, 2026-11 | ISC |
 | Phosphor | Iconos SVG (1512 por peso, 6 pesos) | 2.1.1 | MIT |
+| Heroicons | Iconos SVG (324 por peso, 2 pesos) | 2.2.0 | MIT |
 
 <!-- PAQUETES:FIN -->
 
@@ -29,6 +30,7 @@ jetbrains-mono/    web/ (woff2) · variable/ · ttf/
 icons/
   lucide/          lucide-svg.zip · index.json
   phosphor/        phosphor-<peso>.zip (regular, bold, fill, light, thin, duotone) · index.json
+  heroicons/       heroicons-<peso>.zip (outline, solid) · index.json
 licenses/          licencias de cada paquete
 catalog.json       índice general
 _headers           CORS y caché para Cloudflare Pages
