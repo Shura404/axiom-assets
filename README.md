@@ -17,6 +17,7 @@ El índice general está en `catalog.json`.
 | Lucide | Iconos SVG (2052) | descarga del repo, 2026-11 | ISC |
 | Phosphor | Iconos SVG (1512 por peso, 6 pesos) | 2.1.1 | MIT |
 | Heroicons | Iconos SVG (324 por peso, 2 pesos) | 2.2.0 | MIT |
+| Outfit Fonts | Fuente | 1.1 | OFL 1.1 |
 
 <!-- PAQUETES:FIN -->
 
@@ -27,6 +28,7 @@ El índice general está en `catalog.json`.
 ```
 inter/             web/ (woff2 + inter.css) · variable/ · ttf/ · otf/
 jetbrains-mono/    web/ (woff2) · variable/ · ttf/
+outfit-fonts/      web/ (woff2) · variable/ · ttf/ · otf/
 icons/
   lucide/          lucide-svg.zip · index.json
   phosphor/        phosphor-<peso>.zip (regular, bold, fill, light, thin, duotone) · index.json

@@ -70,6 +70,19 @@
         "solid": "icons/heroicons/heroicons-solid.zip"
       },
       "indice": "icons/heroicons/index.json"
+    },
+    {
+      "id": "outfit-fonts",
+      "tipo": "fuente",
+      "version": "1.1",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/outfit-fonts-OFL-1.1.txt",
+      "carpetas": {
+        "web": "outfit-fonts/web (woff2, 10)",
+        "variable": "outfit-fonts/variable (ttf variable; renombrados sin corchetes)",
+        "ttf": "outfit-fonts/ttf (estáticas, 9)",
+        "otf": "outfit-fonts/otf (estáticas, 9)"
+      }
     }
   ]
 }
