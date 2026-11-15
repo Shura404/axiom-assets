@@ -18,7 +18,7 @@ El índice general está en `catalog.json`.
 | Phosphor | Iconos SVG (1512 por peso, 6 pesos) | 2.1.1 | MIT |
 | Heroicons | Iconos SVG (324 por peso, 2 pesos) | 2.2.0 | MIT |
 | Outfit Fonts | Fuente | 1.1 | OFL 1.1 |
-| Geist Font | Fuente | 1.9.2 | OFL 1.1 |
+| Iconoir | Iconos SVG (1383 por peso, 2 pesos) | 7.12.2 | MIT |
 
 <!-- PAQUETES:FIN -->
 
@@ -30,11 +30,11 @@ El índice general está en `catalog.json`.
 inter/             web/ (woff2 + inter.css) · variable/ · ttf/ · otf/
 jetbrains-mono/    web/ (woff2) · variable/ · ttf/
 outfit-fonts/      web/ (woff2) · variable/ · ttf/ · otf/
-geist-font/        web/ (woff2) · variable/ · ttf/ · otf/
 icons/
   lucide/          lucide-svg.zip · index.json
   phosphor/        phosphor-<peso>.zip (regular, bold, fill, light, thin, duotone) · index.json
   heroicons/       heroicons-<peso>.zip (outline, solid) · index.json
+  iconoir/         iconoir-<peso>.zip (regular, solid) · index.json
 licenses/          licencias de cada paquete
 catalog.json       índice general
 _headers           CORS y caché para Cloudflare Pages

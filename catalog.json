@@ -85,17 +85,18 @@
       }
     },
     {
-      "id": "geist-font",
-      "tipo": "fuente",
-      "version": "1.9.2",
-      "licencia": "OFL-1.1",
-      "licencia_archivo": "licenses/geist-font-OFL-1.1.txt",
-      "carpetas": {
-        "web": "geist-font/web (woff2, 51)",
-        "variable": "geist-font/variable (ttf variable; renombrados sin corchetes)",
-        "ttf": "geist-font/ttf (estáticas, 45)",
-        "otf": "geist-font/otf (estáticas, 41)"
-      }
+      "id": "iconoir",
+      "tipo": "iconos",
+      "version": "7.12.2",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/iconoir-MIT.txt",
+      "iconos_por_peso": 1383,
+      "pesos": ["regular", "solid"],
+      "zips": {
+        "regular": "icons/iconoir/iconoir-regular.zip",
+        "solid": "icons/iconoir/iconoir-solid.zip"
+      },
+      "indice": "icons/iconoir/index.json"
     }
   ]
 }
