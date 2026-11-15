@@ -85,15 +85,18 @@
       }
     },
     {
-      "id": "space-grotesk",
-      "tipo": "fuente",
-      "version": "2.000",
-      "licencia": "OFL-1.1",
-      "licencia_archivo": "licenses/space-grotesk-OFL-1.1.txt",
-      "carpetas": {
-        "variable": "space-grotesk/variable (ttf variable)",
-        "ttf": "space-grotesk/ttf (estáticas, 5)"
-      }
+      "id": "tabler-icons",
+      "tipo": "iconos",
+      "version": "3.52.0",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/tabler-icons-MIT.txt",
+      "iconos_por_peso": 1054,
+      "pesos": ["filled", "outline"],
+      "zips": {
+        "filled": "icons/tabler-icons/tabler-icons-filled.zip",
+        "outline": "icons/tabler-icons/tabler-icons-outline.zip"
+      },
+      "indice": "icons/tabler-icons/index.json"
     }
   ]
 }
