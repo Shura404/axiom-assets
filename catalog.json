@@ -1,6 +1,6 @@
 {
   "nombre": "axiom-assets",
-  "actualizado": "2026-11-14",
+  "actualizado": "2026-11-15",
   "base_raw": "https://raw.githubusercontent.com/Shura404/axiom-assets/main/",
   "paquetes": [
     {
@@ -90,13 +90,61 @@
       "version": "3.52.0",
       "licencia": "MIT",
       "licencia_archivo": "licenses/tabler-icons-MIT.txt",
-      "iconos_por_peso": 1054,
+      "iconos_por_peso": 5491,
       "pesos": ["filled", "outline"],
       "zips": {
         "filled": "icons/tabler-icons/tabler-icons-filled.zip",
         "outline": "icons/tabler-icons/tabler-icons-outline.zip"
       },
       "indice": "icons/tabler-icons/index.json"
+    },
+    {
+      "id": "geist-font",
+      "tipo": "fuente",
+      "version": "1.9.2",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/geist-font-OFL-1.1.txt",
+      "carpetas": {
+        "web": "geist-font/web (woff2, 51)",
+        "variable": "geist-font/variable (ttf variable, 6; renombrados sin corchetes)",
+        "ttf": "geist-font/ttf (estáticas, 45)",
+        "otf": "geist-font/otf (estáticas, 41)"
+      }
+    },
+    {
+      "id": "space-grotesk",
+      "tipo": "fuente",
+      "version": "2.000",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/space-grotesk-OFL-1.1.txt",
+      "carpetas": {
+        "variable": "space-grotesk/variable (ttf variable, 1)",
+        "ttf": "space-grotesk/ttf (estáticas, 5)"
+      }
+    },
+    {
+      "id": "feather",
+      "tipo": "iconos",
+      "version": "4.29.2",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/feather-MIT.txt",
+      "iconos": 287,
+      "zip": "icons/feather/feather-svg.zip",
+      "indice": "icons/feather/index.json"
+    },
+    {
+      "id": "iconoir",
+      "tipo": "iconos",
+      "version": "7.12.2",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/iconoir-MIT.txt",
+      "iconos_por_peso": 1383,
+      "pesos": ["regular", "solid"],
+      "zips": {
+        "regular": "icons/iconoir/iconoir-regular.zip",
+        "solid": "icons/iconoir/iconoir-solid.zip"
+      },
+      "indice": "icons/iconoir/index.json"
     }
   ]
 }
