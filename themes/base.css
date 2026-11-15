@@ -1,0 +1,38 @@
+/* axiom-assets · themes/base.css
+   Arranque mínimo que SOLO usa variables --ax-*. Funciona con cualquier tema de esta carpeta. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--ax-bg)}
+body{margin:0;background:var(--ax-bg);color:var(--ax-text);font-family:var(--ax-font-body);font-size:16px;line-height:1.5}
+:focus-visible{outline:2px solid var(--ax-focus);outline-offset:2px}
+::selection{background:var(--ax-accent-soft);color:var(--ax-text)}
+
+.ax-display{font-family:var(--ax-font-display);font-weight:var(--ax-display-weight);letter-spacing:var(--ax-display-tracking);font-variation-settings:var(--ax-display-vs);line-height:1.1}
+.ax-mono{font-family:var(--ax-font-mono);font-variant-numeric:tabular-nums}
+.ax-muted{color:var(--ax-muted)}
+.ax-link{color:var(--ax-accent-ink);text-underline-offset:3px}
+
+.ax-card{background:var(--ax-surface);border:1px solid var(--ax-border);border-radius:var(--ax-radius-lg);box-shadow:var(--ax-shadow-sm);padding:18px}
+.ax-card--raised{background:var(--ax-surface-2);box-shadow:var(--ax-shadow-md)}
+
+.ax-btn{font:inherit;font-weight:600;min-height:44px;padding:0 20px;border-radius:var(--ax-radius-md);border:1px solid transparent;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:background-color .15s,border-color .15s}
+.ax-btn-primary{background:var(--ax-accent);color:var(--ax-accent-fg)}
+.ax-btn-primary:hover{background:var(--ax-accent-hover)}
+.ax-btn-ghost{background:transparent;color:var(--ax-text);border-color:var(--ax-border)}
+.ax-btn-ghost:hover{background:var(--ax-surface-2)}
+
+.ax-field{display:grid;gap:6px}
+.ax-label{font-size:.875rem;color:var(--ax-muted)}
+.ax-input{font:inherit;color:var(--ax-text);background:var(--ax-bg);border:1px solid var(--ax-border);border-radius:var(--ax-radius-md);min-height:44px;padding:0 14px;width:100%}
+.ax-input::placeholder{color:var(--ax-muted)}
+.ax-input:focus{border-color:var(--ax-focus)}
+
+.ax-chip{font:inherit;font-size:.875rem;font-weight:600;min-height:36px;padding:0 14px;border-radius:var(--ax-radius-pill);border:1px solid var(--ax-border);background:var(--ax-surface);color:var(--ax-text);cursor:pointer}
+.ax-chip[aria-pressed="true"]{background:var(--ax-accent);border-color:var(--ax-accent);color:var(--ax-accent-fg)}
+
+.ax-badge{display:inline-flex;align-items:center;font-size:.8125rem;font-weight:600;padding:2px 10px;border-radius:var(--ax-radius-pill);background:var(--ax-accent-soft);color:var(--ax-accent-ink)}
+.ax-badge--success{background:var(--ax-success-soft);color:var(--ax-success)}
+.ax-badge--warning{background:var(--ax-warning-soft);color:var(--ax-warning)}
+.ax-badge--danger{background:var(--ax-danger-soft);color:var(--ax-danger)}
+.ax-badge--info{background:var(--ax-info-soft);color:var(--ax-info)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

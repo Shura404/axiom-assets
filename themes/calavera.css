@@ -1,0 +1,164 @@
+/* ============================================================
+   Calavera (calavera)
+   Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano.
+   Fuentes (paquetes de axiom-assets): fraunces (raíz), inter, jetbrains-mono
+   Uso:  <html data-theme="calavera" data-mode="dark | light | auto">
+         Sin data-mode = dark. "auto" sigue al sistema.
+   Colores: usa SOLO variables --ax-*; no pongas hex sueltos.
+   ============================================================ */
+:root[data-theme="calavera"] {
+  --ax-font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --ax-font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ax-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --ax-display-weight: 700;
+  --ax-display-tracking: -0.01em;
+  --ax-display-vs: "SOFT" 100, "WONK" 1;
+  --ax-radius-sm: 14px;
+  --ax-radius-md: 20px;
+  --ax-radius-lg: 30px;
+  --ax-radius-pill: 999px;
+}
+:root[data-theme="calavera"] {
+  --ax-bg: #1a1220;
+  --ax-surface: #261b2e;
+  --ax-surface-2: #322439;
+  --ax-border: #4a3659;
+  --ax-text: #f6eee3;
+  --ax-muted: #c6b4cc;
+  --ax-accent: #ffa826;
+  --ax-accent-hover: #ffb240;
+  --ax-accent-fg: #1f1100;
+  --ax-accent-soft: #49322d;
+  --ax-accent-ink: #ffa826;
+  --ax-accent2: #ff5fae;
+  --ax-success: #5fd38d;
+  --ax-success-soft: #2e353b;
+  --ax-warning: #f2c14e;
+  --ax-warning-soft: #433232;
+  --ax-danger: #ff7a7a;
+  --ax-danger-soft: #442839;
+  --ax-info: #7db8ff;
+  --ax-info-soft: #32314b;
+  --ax-focus: #ffa826;
+  --ax-overlay: rgba(10,7,13,0.72);
+  --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(10,7,13,0.6);
+  --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(10,7,13,0.9);
+  --ax-theme-color: #1a1220;
+  color-scheme: dark;
+}
+:root[data-theme="calavera"][data-mode="dark"] {
+  --ax-bg: #1a1220;
+  --ax-surface: #261b2e;
+  --ax-surface-2: #322439;
+  --ax-border: #4a3659;
+  --ax-text: #f6eee3;
+  --ax-muted: #c6b4cc;
+  --ax-accent: #ffa826;
+  --ax-accent-hover: #ffb240;
+  --ax-accent-fg: #1f1100;
+  --ax-accent-soft: #49322d;
+  --ax-accent-ink: #ffa826;
+  --ax-accent2: #ff5fae;
+  --ax-success: #5fd38d;
+  --ax-success-soft: #2e353b;
+  --ax-warning: #f2c14e;
+  --ax-warning-soft: #433232;
+  --ax-danger: #ff7a7a;
+  --ax-danger-soft: #442839;
+  --ax-info: #7db8ff;
+  --ax-info-soft: #32314b;
+  --ax-focus: #ffa826;
+  --ax-overlay: rgba(10,7,13,0.72);
+  --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(10,7,13,0.6);
+  --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(10,7,13,0.9);
+  --ax-theme-color: #1a1220;
+  color-scheme: dark;
+}
+:root[data-theme="calavera"][data-mode="light"] {
+  --ax-bg: #f8f0e2;
+  --ax-surface: #fffaf0;
+  --ax-surface-2: #f0e5d0;
+  --ax-border: #dfd0b4;
+  --ax-text: #2a1630;
+  --ax-muted: #664b6e;
+  --ax-accent: #b3125f;
+  --ax-accent-hover: #9e1054;
+  --ax-accent-fg: #ffffff;
+  --ax-accent-soft: #f3d5d9;
+  --ax-accent-ink: #b3125f;
+  --ax-accent2: #9d5404;
+  --ax-success: #19743e;
+  --ax-success-soft: #dfe7d7;
+  --ax-warning: #8b5a00;
+  --ax-warning-soft: #efe4ce;
+  --ax-danger: #bd2d29;
+  --ax-danger-soft: #f6ddd4;
+  --ax-info: #1f5fbf;
+  --ax-info-soft: #e0e4e9;
+  --ax-focus: #b3125f;
+  --ax-overlay: rgba(34,18,38,0.42);
+  --ax-shadow-sm: 0 1px 2px rgba(34,18,38,0.08);
+  --ax-shadow-md: 0 1px 2px rgba(34,18,38,0.08), 0 14px 30px -14px rgba(34,18,38,0.28);
+  --ax-theme-color: #f8f0e2;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="calavera"][data-mode="auto"] {
+    --ax-bg: #1a1220;
+    --ax-surface: #261b2e;
+    --ax-surface-2: #322439;
+    --ax-border: #4a3659;
+    --ax-text: #f6eee3;
+    --ax-muted: #c6b4cc;
+    --ax-accent: #ffa826;
+    --ax-accent-hover: #ffb240;
+    --ax-accent-fg: #1f1100;
+    --ax-accent-soft: #49322d;
+    --ax-accent-ink: #ffa826;
+    --ax-accent2: #ff5fae;
+    --ax-success: #5fd38d;
+    --ax-success-soft: #2e353b;
+    --ax-warning: #f2c14e;
+    --ax-warning-soft: #433232;
+    --ax-danger: #ff7a7a;
+    --ax-danger-soft: #442839;
+    --ax-info: #7db8ff;
+    --ax-info-soft: #32314b;
+    --ax-focus: #ffa826;
+    --ax-overlay: rgba(10,7,13,0.72);
+    --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(10,7,13,0.6);
+    --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(10,7,13,0.9);
+    --ax-theme-color: #1a1220;
+    color-scheme: dark;
+}
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="calavera"][data-mode="auto"] {
+    --ax-bg: #f8f0e2;
+    --ax-surface: #fffaf0;
+    --ax-surface-2: #f0e5d0;
+    --ax-border: #dfd0b4;
+    --ax-text: #2a1630;
+    --ax-muted: #664b6e;
+    --ax-accent: #b3125f;
+    --ax-accent-hover: #9e1054;
+    --ax-accent-fg: #ffffff;
+    --ax-accent-soft: #f3d5d9;
+    --ax-accent-ink: #b3125f;
+    --ax-accent2: #9d5404;
+    --ax-success: #19743e;
+    --ax-success-soft: #dfe7d7;
+    --ax-warning: #8b5a00;
+    --ax-warning-soft: #efe4ce;
+    --ax-danger: #bd2d29;
+    --ax-danger-soft: #f6ddd4;
+    --ax-info: #1f5fbf;
+    --ax-info-soft: #e0e4e9;
+    --ax-focus: #b3125f;
+    --ax-overlay: rgba(34,18,38,0.42);
+    --ax-shadow-sm: 0 1px 2px rgba(34,18,38,0.08);
+    --ax-shadow-md: 0 1px 2px rgba(34,18,38,0.08), 0 14px 30px -14px rgba(34,18,38,0.28);
+    --ax-theme-color: #f8f0e2;
+    color-scheme: light;
+}
+}

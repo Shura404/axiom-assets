@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es" data-theme="esmeralda-noche" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Temas · axiom-assets</title>
+<meta name="theme-color" content="#0a1613">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="all.css">
+<link rel="stylesheet" href="base.css">
+<style>
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px;display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+.picker{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;flex:1 1 100%;min-width:0;max-width:100%}
+.picker .ax-chip{flex:none}
+.bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;min-width:0}
+.seg{display:inline-flex;border:1px solid var(--ax-border);border-radius:var(--ax-radius-pill);overflow:hidden;background:var(--ax-surface)}
+.seg button{font:inherit;font-size:.875rem;font-weight:600;min-height:36px;padding:0 16px;border:0;background:transparent;color:var(--ax-text);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ax-accent);color:var(--ax-accent-fg)}
+h1{margin:0;font-size:clamp(2rem,7vw,3.25rem)}
+.lead{margin:6px 0 0;max-width:46ch}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:10px}
+.sw div{border:1px solid var(--ax-border);border-radius:var(--ax-radius-md);overflow:hidden;font-size:.75rem;background:var(--ax-surface)}
+.sw i{display:block;height:44px}
+.sw span{display:block;padding:6px 8px}
+.sw b{display:block;font-weight:600}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.kpi{font-size:clamp(2.25rem,9vw,3rem);margin:4px 0 12px}
+.grid>*{min-width:0}
+.row{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--ax-border)}
+.row:first-of-type{border-top:0}
+.dot{width:36px;height:36px;border-radius:var(--ax-radius-md);background:var(--ax-accent-soft);color:var(--ax-accent-ink);display:grid;place-items:center;font-weight:700;flex:none}
+.row .t{flex:1;min-width:0}
+.row .t small{display:block}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+h2{margin:0 0 10px;font-size:1.125rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="bar">
+    <nav class="picker" id="picker" aria-label="Temas"></nav>
+    <div class="seg" id="modes" role="group" aria-label="Modo">
+      <button data-m="dark" aria-pressed="true">Oscuro</button>
+      <button data-m="light" aria-pressed="false">Claro</button>
+      <button data-m="auto" aria-pressed="false">Auto</button>
+    </div>
+  </div>
+
+  <header>
+    <h1 class="ax-display" id="tname"></h1>
+    <p class="lead ax-muted" id="tintent"></p>
+  </header>
+
+  <section class="sw" id="sw" aria-label="Paleta"></section>
+
+  <section class="grid">
+    <article class="ax-card ax-card--raised">
+      <p class="ax-label" style="margin:0">Saldo del mes</p>
+      <p class="kpi ax-display ax-mono">1.248,50</p>
+      <div class="badges" style="margin-bottom:14px"><span class="ax-badge ax-badge--success">+8,4 %</span><span class="ax-badge">Meta al 62 %</span></div>
+      <div class="actions"><button class="ax-btn ax-btn-primary">Agregar gasto</button><button class="ax-btn ax-btn-ghost">Ver detalle</button></div>
+    </article>
+
+    <article class="ax-card">
+      <h2 class="ax-display">Movimientos</h2>
+      <div class="row"><span class="dot">S</span><div class="t">Supermercado<small class="ax-muted">Hoy</small></div><span class="ax-mono">-86,20</span></div>
+      <div class="row"><span class="dot">N</span><div class="t">Nómina<small class="ax-muted">Ayer</small></div><span class="ax-mono" style="color:var(--ax-success)">+1.450,00</span></div>
+      <div class="row"><span class="dot">A</span><div class="t">Alquiler<small class="ax-muted">Hace 3 días</small></div><span class="ax-mono" style="color:var(--ax-danger)">-540,00</span></div>
+    </article>
+
+    <article class="ax-card">
+      <h2 class="ax-display">Formulario y estados</h2>
+      <div class="ax-field" style="margin-bottom:14px">
+        <label class="ax-label" for="cn">Concepto</label>
+        <input class="ax-input" id="cn" placeholder="Ej. Café con leche">
+      </div>
+      <div class="badges">
+        <span class="ax-badge ax-badge--success">Pagado</span>
+        <span class="ax-badge ax-badge--warning">Pendiente</span>
+        <span class="ax-badge ax-badge--danger">Vencido</span>
+        <span class="ax-badge ax-badge--info">Nota</span>
+      </div>
+      <p style="margin:14px 0 0"><a class="ax-link" href="#">Enlace de ejemplo</a></p>
+    </article>
+  </section>
+</main>
+<script>
+var TEMAS = [{"id": "esmeralda-noche", "n": "Esmeralda noche", "i": "Finanzas y ahorro con calma: jade sobre tinta verdosa, dorado para destacar.", "d": "dark"}, {"id": "tinta-ultramar", "n": "Tinta ultramar", "i": "Productividad y paneles claros: papel frío, tinta azul y ultramar.", "d": "light"}, {"id": "calavera", "n": "Calavera", "i": "Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano.", "d": "dark"}, {"id": "arcade-neon", "n": "Arcade neón", "i": "Gamer y neón: violeta casi negro, cian eléctrico y rosa.", "d": "dark"}, {"id": "grafito-ambar", "n": "Grafito ámbar", "i": "Herramientas técnicas: grafito con ámbar de señal (línea Axiom).", "d": "dark"}, {"id": "oceano-coral", "n": "Océano coral", "i": "Seguridad y confianza: azul marino profundo con coral.", "d": "dark"}, {"id": "vino-rosado", "n": "Vino rosado", "i": "Elegante y premium: vino oscuro, rosa y champán.", "d": "dark"}, {"id": "mono-hielo", "n": "Mono hielo", "i": "Minimalismo monocromo: blanco o negro; el acento es el contraste.", "d": "light"}];
+var root = document.documentElement, picker = document.getElementById('picker');
+var cur = TEMAS[0].id, mode = 'dark';
+var KEYS = [['bg','Fondo'],['surface','Superficie'],['surface-2','Superficie 2'],['border','Borde'],['text','Texto'],['muted','Texto suave'],['accent','Acento'],['accent2','Acento 2']];
+function hexOf(v){ return (v||'').trim(); }
+function paint(){
+  root.setAttribute('data-theme', cur); root.setAttribute('data-mode', mode);
+  var t = TEMAS.filter(function(x){return x.id===cur;})[0];
+  document.getElementById('tname').textContent = t.n;
+  document.getElementById('tintent').textContent = t.i;
+  Array.prototype.forEach.call(picker.children, function(b){ b.setAttribute('aria-pressed', b.dataset.id===cur); });
+  Array.prototype.forEach.call(document.querySelectorAll('#modes button'), function(b){ b.setAttribute('aria-pressed', b.dataset.m===mode); });
+  var cs = getComputedStyle(root), sw = document.getElementById('sw'); sw.innerHTML = '';
+  KEYS.forEach(function(k){
+    var v = hexOf(cs.getPropertyValue('--ax-'+k[0]));
+    var d = document.createElement('div');
+    d.innerHTML = '<i style="background:'+v+'"></i><span><b>'+k[1]+'</b>'+v+'</span>';
+    sw.appendChild(d);
+  });
+  var m = document.querySelector('meta[name=theme-color]'); if (m) m.setAttribute('content', hexOf(cs.getPropertyValue('--ax-theme-color')));
+  history.replaceState(null, '', '#'+cur+'/'+mode);
+}
+TEMAS.forEach(function(t){
+  var b = document.createElement('button'); b.className='ax-chip'; b.textContent=t.n; b.dataset.id=t.id;
+  b.addEventListener('click', function(){ cur=t.id; if (mode!=='auto') mode=t.d; paint(); });
+  picker.appendChild(b);
+});
+Array.prototype.forEach.call(document.querySelectorAll('#modes button'), function(b){
+  b.addEventListener('click', function(){ mode=b.dataset.m; paint(); });
+});
+var h = location.hash.replace('#','').split('/');
+if (h[0] && TEMAS.some(function(x){return x.id===h[0];})) cur = h[0];
+if (['dark','light','auto'].indexOf(h[1])>-1) mode = h[1]; else { mode = TEMAS.filter(function(x){return x.id===cur;})[0].d; }
+paint();
+</script>
+</body>
+</html>

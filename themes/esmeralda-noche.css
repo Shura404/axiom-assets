@@ -1,0 +1,164 @@
+/* ============================================================
+   Esmeralda noche (esmeralda-noche)
+   Finanzas y ahorro con calma: jade sobre tinta verdosa, dorado para destacar.
+   Fuentes (paquetes de axiom-assets): outfit-fonts, inter, jetbrains-mono
+   Uso:  <html data-theme="esmeralda-noche" data-mode="dark | light | auto">
+         Sin data-mode = dark. "auto" sigue al sistema.
+   Colores: usa SOLO variables --ax-*; no pongas hex sueltos.
+   ============================================================ */
+:root[data-theme="esmeralda-noche"] {
+  --ax-font-display: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ax-font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ax-font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --ax-display-weight: 600;
+  --ax-display-tracking: -0.02em;
+  --ax-display-vs: normal;
+  --ax-radius-sm: 10px;
+  --ax-radius-md: 14px;
+  --ax-radius-lg: 22px;
+  --ax-radius-pill: 999px;
+}
+:root[data-theme="esmeralda-noche"] {
+  --ax-bg: #0a1613;
+  --ax-surface: #10211d;
+  --ax-surface-2: #172d28;
+  --ax-border: #274640;
+  --ax-text: #e8f3ef;
+  --ax-muted: #93b5ab;
+  --ax-accent: #35c79a;
+  --ax-accent-hover: #4dcea6;
+  --ax-accent-fg: #04140f;
+  --ax-accent-soft: #163c31;
+  --ax-accent-ink: #35c79a;
+  --ax-accent2: #e5c16b;
+  --ax-success: #5fd38d;
+  --ax-success-soft: #1b3a2d;
+  --ax-warning: #f2c14e;
+  --ax-warning-soft: #303724;
+  --ax-danger: #ff7a7a;
+  --ax-danger-soft: #312d2a;
+  --ax-info: #7db8ff;
+  --ax-info-soft: #1f363d;
+  --ax-focus: #35c79a;
+  --ax-overlay: rgba(4,9,8,0.72);
+  --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(4,9,8,0.6);
+  --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(4,9,8,0.9);
+  --ax-theme-color: #0a1613;
+  color-scheme: dark;
+}
+:root[data-theme="esmeralda-noche"][data-mode="dark"] {
+  --ax-bg: #0a1613;
+  --ax-surface: #10211d;
+  --ax-surface-2: #172d28;
+  --ax-border: #274640;
+  --ax-text: #e8f3ef;
+  --ax-muted: #93b5ab;
+  --ax-accent: #35c79a;
+  --ax-accent-hover: #4dcea6;
+  --ax-accent-fg: #04140f;
+  --ax-accent-soft: #163c31;
+  --ax-accent-ink: #35c79a;
+  --ax-accent2: #e5c16b;
+  --ax-success: #5fd38d;
+  --ax-success-soft: #1b3a2d;
+  --ax-warning: #f2c14e;
+  --ax-warning-soft: #303724;
+  --ax-danger: #ff7a7a;
+  --ax-danger-soft: #312d2a;
+  --ax-info: #7db8ff;
+  --ax-info-soft: #1f363d;
+  --ax-focus: #35c79a;
+  --ax-overlay: rgba(4,9,8,0.72);
+  --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(4,9,8,0.6);
+  --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(4,9,8,0.9);
+  --ax-theme-color: #0a1613;
+  color-scheme: dark;
+}
+:root[data-theme="esmeralda-noche"][data-mode="light"] {
+  --ax-bg: #f1f7f4;
+  --ax-surface: #ffffff;
+  --ax-surface-2: #e6f0ec;
+  --ax-border: #cbdcd5;
+  --ax-text: #0e2a24;
+  --ax-muted: #486760;
+  --ax-accent: #08795a;
+  --ax-accent-hover: #076a4f;
+  --ax-accent-fg: #ffffff;
+  --ax-accent-soft: #d7eae5;
+  --ax-accent-ink: #087457;
+  --ax-accent2: #87660d;
+  --ax-success: #197740;
+  --ax-success-soft: #dfece4;
+  --ax-warning: #905d00;
+  --ax-warning-soft: #efe8db;
+  --ax-danger: #bd2d29;
+  --ax-danger-soft: #f6e2e1;
+  --ax-info: #1f5fbf;
+  --ax-info-soft: #e0e9f6;
+  --ax-focus: #087457;
+  --ax-overlay: rgba(11,34,29,0.42);
+  --ax-shadow-sm: 0 1px 2px rgba(11,34,29,0.08);
+  --ax-shadow-md: 0 1px 2px rgba(11,34,29,0.08), 0 14px 30px -14px rgba(11,34,29,0.28);
+  --ax-theme-color: #f1f7f4;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="esmeralda-noche"][data-mode="auto"] {
+    --ax-bg: #0a1613;
+    --ax-surface: #10211d;
+    --ax-surface-2: #172d28;
+    --ax-border: #274640;
+    --ax-text: #e8f3ef;
+    --ax-muted: #93b5ab;
+    --ax-accent: #35c79a;
+    --ax-accent-hover: #4dcea6;
+    --ax-accent-fg: #04140f;
+    --ax-accent-soft: #163c31;
+    --ax-accent-ink: #35c79a;
+    --ax-accent2: #e5c16b;
+    --ax-success: #5fd38d;
+    --ax-success-soft: #1b3a2d;
+    --ax-warning: #f2c14e;
+    --ax-warning-soft: #303724;
+    --ax-danger: #ff7a7a;
+    --ax-danger-soft: #312d2a;
+    --ax-info: #7db8ff;
+    --ax-info-soft: #1f363d;
+    --ax-focus: #35c79a;
+    --ax-overlay: rgba(4,9,8,0.72);
+    --ax-shadow-sm: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(4,9,8,0.6);
+    --ax-shadow-md: 0 1px 0 rgba(255,255,255,.05) inset, 0 16px 32px -16px rgba(4,9,8,0.9);
+    --ax-theme-color: #0a1613;
+    color-scheme: dark;
+}
+}
+@media (prefers-color-scheme: light) {
+  :root[data-theme="esmeralda-noche"][data-mode="auto"] {
+    --ax-bg: #f1f7f4;
+    --ax-surface: #ffffff;
+    --ax-surface-2: #e6f0ec;
+    --ax-border: #cbdcd5;
+    --ax-text: #0e2a24;
+    --ax-muted: #486760;
+    --ax-accent: #08795a;
+    --ax-accent-hover: #076a4f;
+    --ax-accent-fg: #ffffff;
+    --ax-accent-soft: #d7eae5;
+    --ax-accent-ink: #087457;
+    --ax-accent2: #87660d;
+    --ax-success: #197740;
+    --ax-success-soft: #dfece4;
+    --ax-warning: #905d00;
+    --ax-warning-soft: #efe8db;
+    --ax-danger: #bd2d29;
+    --ax-danger-soft: #f6e2e1;
+    --ax-info: #1f5fbf;
+    --ax-info-soft: #e0e9f6;
+    --ax-focus: #087457;
+    --ax-overlay: rgba(11,34,29,0.42);
+    --ax-shadow-sm: 0 1px 2px rgba(11,34,29,0.08);
+    --ax-shadow-md: 0 1px 2px rgba(11,34,29,0.08), 0 14px 30px -14px rgba(11,34,29,0.28);
+    --ax-theme-color: #f1f7f4;
+    color-scheme: light;
+}
+}
