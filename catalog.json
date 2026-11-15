@@ -83,6 +83,16 @@
         "ttf": "outfit-fonts/ttf (estáticas, 9)",
         "otf": "outfit-fonts/otf (estáticas, 9)"
       }
+    },
+    {
+      "id": "feather",
+      "tipo": "iconos",
+      "version": "4.29.1",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/feather-MIT.txt",
+      "iconos": 287,
+      "zip": "icons/feather/feather-svg.zip",
+      "indice": "icons/feather/index.json"
     }
   ]
 }

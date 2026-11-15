@@ -18,6 +18,7 @@ El índice general está en `catalog.json`.
 | Phosphor | Iconos SVG (1512 por peso, 6 pesos) | 2.1.1 | MIT |
 | Heroicons | Iconos SVG (324 por peso, 2 pesos) | 2.2.0 | MIT |
 | Outfit Fonts | Fuente | 1.1 | OFL 1.1 |
+| feather | Iconos SVG (287) | 4.29.1 | MIT |
 
 <!-- PAQUETES:FIN -->
 
@@ -33,6 +34,7 @@ icons/
   lucide/          lucide-svg.zip · index.json
   phosphor/        phosphor-<peso>.zip (regular, bold, fill, light, thin, duotone) · index.json
   heroicons/       heroicons-<peso>.zip (outline, solid) · index.json
+  feather/         feather-svg.zip · index.json
 licenses/          licencias de cada paquete
 catalog.json       índice general
 _headers           CORS y caché para Cloudflare Pages
