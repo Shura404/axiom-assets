@@ -145,6 +145,17 @@
         "solid": "icons/iconoir/iconoir-solid.zip"
       },
       "indice": "icons/iconoir/index.json"
+    },
+    {
+      "id": "fraunces",
+      "tipo": "fuente",
+      "version": "1.000",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/fraunces-OFL-1.1.txt",
+      "carpetas": {
+        "variable": "fraunces/variable (ttf variable)",
+        "ttf": "fraunces/ttf (estáticas, 36)"
+      }
     }
   ]
 }

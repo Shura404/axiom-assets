@@ -23,6 +23,7 @@ El índice general está en `catalog.json`.
 | Space Grotesk | Fuente | 2.000 | OFL 1.1 |
 | Feather | Iconos SVG (287) | 4.29.2 | MIT |
 | Iconoir | Iconos SVG (1383 regular, 288 solid) | 7.12.2 | MIT |
+| Fraunces | Fuente | 1.000 | OFL 1.1 |
 
 <!-- PAQUETES:FIN -->
 
@@ -36,6 +37,7 @@ jetbrains-mono/    web/ (woff2) · variable/ · ttf/
 outfit-fonts/      web/ (woff2) · variable/ · ttf/ · otf/
 geist-font/        web/ (woff2) · variable/ · ttf/ · otf/
 space-grotesk/     variable/ · ttf/
+fraunces/          variable/ · ttf/
 icons/
   lucide/          lucide-svg.zip · index.json
   phosphor/        phosphor-<peso>.zip (regular, bold, fill, light, thin, duotone) · index.json

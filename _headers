@@ -16,3 +16,6 @@
 
 /geist-font/*
   Cache-Control: public, max-age=2592000
+
+/fraunces/*
+  Cache-Control: public, max-age=2592000
