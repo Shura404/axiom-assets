@@ -10,3 +10,6 @@
 
 /outfit-fonts/*
   Cache-Control: public, max-age=2592000
+
+/geist-font/*
+  Cache-Control: public, max-age=2592000
