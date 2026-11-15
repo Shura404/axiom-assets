@@ -11,5 +11,5 @@
 /outfit-fonts/*
   Cache-Control: public, max-age=2592000
 
-/geist-font/*
+/space-grotesk/*
   Cache-Control: public, max-age=2592000

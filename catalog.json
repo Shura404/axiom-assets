@@ -85,18 +85,15 @@
       }
     },
     {
-      "id": "iconoir",
-      "tipo": "iconos",
-      "version": "7.12.2",
-      "licencia": "MIT",
-      "licencia_archivo": "licenses/iconoir-MIT.txt",
-      "iconos_por_peso": 1383,
-      "pesos": ["regular", "solid"],
-      "zips": {
-        "regular": "icons/iconoir/iconoir-regular.zip",
-        "solid": "icons/iconoir/iconoir-solid.zip"
-      },
-      "indice": "icons/iconoir/index.json"
+      "id": "space-grotesk",
+      "tipo": "fuente",
+      "version": "2.000",
+      "licencia": "OFL-1.1",
+      "licencia_archivo": "licenses/space-grotesk-OFL-1.1.txt",
+      "carpetas": {
+        "variable": "space-grotesk/variable (ttf variable)",
+        "ttf": "space-grotesk/ttf (estáticas, 5)"
+      }
     }
   ]
 }
