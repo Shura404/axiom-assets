@@ -19,19 +19,19 @@ Banco público de recursos para las PWA y apps de la familia Axiom: fuentes (Int
 - Contraste revisado con script (WCAG AA): texto principal 7:1 o más; texto suave, acento como texto y estados 4,5:1 o más. Vista previa comprobada en móvil (360, 390 y 820 px) sin desbordes.
 - Rutas de Fraunces corregidas a `fraunces/variable/` en `fonts.css`, README y catálogo (commit `13b5779`). Desplegado a mano en Cloudflare (1 build).
 - Vista previa abierta desde el móvil: `axiom-assets.pages.dev/themes/preview.html` (se puede abrir un tema directo, por ejemplo `#calavera/dark`).
-- Guille dice que ya resolvió el acceso de GitHub a Cloudflare Pages.
+- Acceso de GitHub a Cloudflare Pages resuelto y verificado: el push `dd9b145` llegó a Pages como `github:push` y se omitió por `[CI Skip]`, sin gastar build.
 
 ## En curso
 - Nada abierto.
 
 ## Siguiente paso
-1. **Verificar el despliegue automático.** El próximo commit con `deploy:` debe crear en Pages un despliegue de tipo `github:push`. Hasta ahora los dos únicos despliegues son manuales (`ad_hoc`). Si no aparece, revisar el permiso del repo para la app de Cloudflare en GitHub.
+1. **Confirmar el primer build automático.** El aviso de GitHub ya llega a Pages; falta ver que un commit con `deploy:` construya solo. Hasta ahora los únicos builds son manuales (`ad_hoc`). Si no construye, revisar el proyecto en Cloudflare.
 2. **Desactivar las vistas previas del proyecto Pages** (Settings → Builds → Branch control → Preview branch: None), como pide `GUIA-CLOUDFLARE.md` §4.2. Hoy están en "todas las ramas".
 3. **Listar `themes/` en el README del repo** (tabla y estructura, entre los marcadores que regenera Asset Dock) y decidir si `catalog.json` también los menciona.
 4. **Theme Dock** (propuesto, falta confirmar que se construye): tercera herramienta de Axiom Deck, junto a Asset Dock y Repo Dock, para crear temas nuevos sin depender de Claude. Flujo: escribir un nombre y pegar 3 o 4 colores (fondo, acento, acento 2) o importar una paleta libre (Catppuccin, Rosé Pine, Nord, Tokyo Night, Radix), generar claro y oscuro, corregir solos los contrastes por debajo de 4,5:1, añadir el tema a `themes-catalog.json` sin tocar los demás y entregar un ZIP para Repo Dock. La lógica de contraste y de generación existe en un script de Python que **no está guardado en ningún repo**; hay que portarlo a JS o subirlo antes de empezar.
 
 ## Pendientes por verificar
-- Que el acceso de GitHub realmente dispara builds (ver Siguiente paso 1).
+- Que un commit `deploy:` construye solo (el aviso de GitHub ya llega; ver Siguiente paso 1).
 - Que Fraunces sigue cargando en Calavera y Vino rosado tras el cambio de ruta (despliegue `29c1f849`).
 - Que `_headers` cubre también `themes/` (CORS y caché), si los CSS se van a usar desde otro dominio.
 
