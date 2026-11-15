@@ -10,11 +10,11 @@ Los colores de texto cumplen contraste WCAG AA (texto principal 7:1 o más; text
 |---|---|---|---|
 | `esmeralda-noche` | Finanzas y ahorro con calma: jade sobre tinta verdosa, dorado para destacar. | oscuro | outfit-fonts, inter, jetbrains-mono |
 | `tinta-ultramar` | Productividad y paneles claros: papel frío, tinta azul y ultramar. | claro | geist-font |
-| `calavera` | Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano. | oscuro | fraunces (raíz), inter, jetbrains-mono |
+| `calavera` | Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano. | oscuro | fraunces, inter, jetbrains-mono |
 | `arcade-neon` | Gamer y neón: violeta casi negro, cian eléctrico y rosa. | oscuro | jetbrains-mono, inter |
 | `grafito-ambar` | Herramientas técnicas: grafito con ámbar de señal (línea Axiom). | oscuro | space-grotesk, inter, jetbrains-mono |
 | `oceano-coral` | Seguridad y confianza: azul marino profundo con coral. | oscuro | outfit-fonts, geist-font |
-| `vino-rosado` | Elegante y premium: vino oscuro, rosa y champán. | oscuro | fraunces (raíz), geist-font |
+| `vino-rosado` | Elegante y premium: vino oscuro, rosa y champán. | oscuro | fraunces, geist-font |
 | `mono-hielo` | Minimalismo monocromo: blanco o negro; el acento es el contraste. | claro | inter, jetbrains-mono |
 
 ## Cómo aplicarlo
@@ -60,4 +60,4 @@ Los mismos valores están en `themes-catalog.json` (raíz del repo), para leerlo
 
 ## Fuentes
 
-`themes/fonts.css` declara las fuentes con rutas relativas a este repo (solo sirve si lo publicas tal cual). En un proyecto, copia los archivos `web/` de cada paquete y ajusta las rutas. Fraunces está en la raíz del repo (archivos `.ttf` variables).
+`themes/fonts.css` declara las fuentes con rutas relativas a este repo (solo sirve si lo publicas tal cual). En un proyecto, copia los archivos `web/` de cada paquete y ajusta las rutas. Fraunces está en `fraunces/variable/` (archivos `.ttf` variables).

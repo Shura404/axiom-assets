@@ -333,7 +333,7 @@
 /* ============================================================
    Calavera (calavera)
    Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano.
-   Fuentes (paquetes de axiom-assets): fraunces (raíz), inter, jetbrains-mono
+   Fuentes (paquetes de axiom-assets): fraunces, inter, jetbrains-mono
    Uso:  <html data-theme="calavera" data-mode="dark | light | auto">
          Sin data-mode = dark. "auto" sigue al sistema.
    Colores: usa SOLO variables --ax-*; no pongas hex sueltos.
@@ -993,7 +993,7 @@
 /* ============================================================
    Vino rosado (vino-rosado)
    Elegante y premium: vino oscuro, rosa y champán.
-   Fuentes (paquetes de axiom-assets): fraunces (raíz), geist-font
+   Fuentes (paquetes de axiom-assets): fraunces, geist-font
    Uso:  <html data-theme="vino-rosado" data-mode="dark | light | auto">
          Sin data-mode = dark. "auto" sigue al sistema.
    Colores: usa SOLO variables --ax-*; no pongas hex sueltos.

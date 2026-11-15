@@ -11,5 +11,5 @@
 @font-face{font-family:'JetBrains Mono';src:url('../jetbrains-mono/web/JetBrainsMono-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:'JetBrains Mono';src:url('../jetbrains-mono/web/JetBrainsMono-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:'Space Grotesk';src:url('../space-grotesk/variable/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');font-weight:300 700;font-style:normal;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('../Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
-@font-face{font-family:'Fraunces';src:url('../Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:italic;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fraunces/variable/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:'Fraunces';src:url('../fraunces/variable/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');font-weight:100 900;font-style:italic;font-display:swap}

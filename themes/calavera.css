@@ -1,7 +1,7 @@
 /* ============================================================
    Calavera (calavera)
    Humor con personalidad: berenjena oscura, cempasúchil y rosa mexicano.
-   Fuentes (paquetes de axiom-assets): fraunces (raíz), inter, jetbrains-mono
+   Fuentes (paquetes de axiom-assets): fraunces, inter, jetbrains-mono
    Uso:  <html data-theme="calavera" data-mode="dark | light | auto">
          Sin data-mode = dark. "auto" sigue al sistema.
    Colores: usa SOLO variables --ax-*; no pongas hex sueltos.
