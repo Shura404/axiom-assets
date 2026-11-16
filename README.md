@@ -54,6 +54,12 @@ _headers           CORS y caché para Cloudflare Pages
 
 Inter: no se incluyen `Inter.ttc` ni `extras/woff-hinted` (son redundantes con el resto). Las fuentes variables de JetBrains Mono se renombraron sin corchetes (`JetBrainsMono-Variable.ttf`) para que las URL no necesiten codificación. `inter/web/inter.css` es el CSS oficial de Inter con todos los `@font-face` listos (usa rutas relativas).
 
+## Temas
+
+Ocho temas de estilo listos para aplicar, cada uno en claro y oscuro, en la carpeta `themes/`: `esmeralda-noche`, `tinta-ultramar`, `calavera`, `arcade-neon`, `grafito-ambar`, `oceano-coral`, `vino-rosado` y `mono-hielo`. El índice con todos sus valores está en `themes-catalog.json`.
+
+Usan variables con prefijo `--ax-*` y se aplican con `<html data-theme="calavera" data-mode="dark">` (`data-mode` admite `dark`, `light` o `auto`). Vista previa: `axiom-assets.pages.dev/themes/preview.html`.
+
 ## Cómo usarlo
 
 **Fuente en una web** (copiando el archivo al proyecto, o sirviendo el repo con Cloudflare Pages):

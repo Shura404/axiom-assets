@@ -1,6 +1,6 @@
 # Estado del proyecto: axiom-assets
 
-Última actualización: 2026-11-15 por Claude (con Guille)
+Última actualización: 2026-11-16 por Claude (con Guille)
 
 > Antes de trabajar, lee `REGLAS.md` del repo `Reglas-Generales`.
 > Comprueba la cuenta activa (sección 1.1 de `REGLAS.md`) antes de crear o borrar nada.
@@ -20,20 +20,17 @@ Banco público de recursos para las PWA y apps de la familia Axiom: fuentes (Int
 - Rutas de Fraunces corregidas a `fraunces/variable/` en `fonts.css`, README y catálogo (commit `13b5779`). Desplegado a mano en Cloudflare (1 build).
 - Vista previa abierta desde el móvil: `axiom-assets.pages.dev/themes/preview.html` (se puede abrir un tema directo, por ejemplo `#calavera/dark`).
 - Acceso de GitHub a Cloudflare Pages resuelto y verificado: el push `dd9b145` llegó a Pages como `github:push` y se omitió por `[CI Skip]`, sin gastar build.
+- Despliegue automático desde GitHub y vistas previas de Pages desactivadas (confirmado por Shura, 15-nov).
+- Temas listados en el `README.md` del repo (fuera de los marcadores que regenera Asset Dock); `_headers` ya los cubre con la regla `/*` (CORS y caché de un día).
 
 ## En curso
 - Nada abierto.
 
 ## Siguiente paso
-1. **Confirmar el primer build automático.** El aviso de GitHub ya llega a Pages; falta ver que un commit con `deploy:` construya solo. Hasta ahora los únicos builds son manuales (`ad_hoc`). Si no construye, revisar el proyecto en Cloudflare.
-2. **Desactivar las vistas previas del proyecto Pages** (Settings → Builds → Branch control → Preview branch: None), como pide `GUIA-CLOUDFLARE.md` §4.2. Hoy están en "todas las ramas".
-3. **Listar `themes/` en el README del repo** (tabla y estructura, entre los marcadores que regenera Asset Dock) y decidir si `catalog.json` también los menciona.
-4. **Theme Dock** (propuesto, falta confirmar que se construye): tercera herramienta de Axiom Deck, junto a Asset Dock y Repo Dock, para crear temas nuevos sin depender de Claude. Flujo: escribir un nombre y pegar 3 o 4 colores (fondo, acento, acento 2) o importar una paleta libre (Catppuccin, Rosé Pine, Nord, Tokyo Night, Radix), generar claro y oscuro, corregir solos los contrastes por debajo de 4,5:1, añadir el tema a `themes-catalog.json` sin tocar los demás y entregar un ZIP para Repo Dock. La lógica de contraste y de generación existe en un script de Python que **no está guardado en ningún repo**; hay que portarlo a JS o subirlo antes de empezar.
+1. **Theme Dock** (propuesto, falta confirmar que se construye): nueva herramienta de Axiom Deck (o un modo de Asset Dock; falta decidirlo), para crear temas nuevos sin depender de Claude. Flujo: escribir un nombre y pegar 3 o 4 colores (fondo, acento, acento 2) o importar una paleta libre (Catppuccin, Rosé Pine, Nord, Tokyo Night, Radix), generar claro y oscuro, corregir solos los contrastes por debajo de 4,5:1, añadir el tema a `themes-catalog.json` sin tocar los demás y entregar un ZIP para Repo Dock. La lógica de contraste y de generación existe en un script de Python que **no está guardado en ningún repo**; hay que portarlo a JS o subirlo antes de empezar.
 
 ## Pendientes por verificar
-- Que un commit `deploy:` construye solo (el aviso de GitHub ya llega; ver Siguiente paso 1).
-- Que Fraunces sigue cargando en Calavera y Vino rosado tras el cambio de ruta (despliegue `29c1f849`).
-- Que `_headers` cubre también `themes/` (CORS y caché), si los CSS se van a usar desde otro dominio.
+- Que Fraunces sigue cargando en Calavera y Vino rosado tras el cambio de ruta (despliegue `29c1f849`); la ruta de `fonts.css` está bien.
 
 ## Datos útiles
 - Repo: `Shura404/axiom-assets` (público), rama `main`.
