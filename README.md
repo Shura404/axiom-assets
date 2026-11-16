@@ -24,6 +24,7 @@ El índice general está en `catalog.json`.
 | Feather | Iconos SVG (287) | 4.29.2 | MIT |
 | Iconoir | Iconos SVG (1383 regular, 288 solid) | 7.12.2 | MIT |
 | Fraunces | Fuente | 1.000 | OFL 1.1 |
+| Bootstrap Icons | Iconos SVG (2079) | 1.13.2 | MIT |
 
 <!-- PAQUETES:FIN -->
 
@@ -45,6 +46,7 @@ icons/
   tabler-icons/    tabler-icons-<peso>.zip (filled, outline) · index.json
   feather/         feather-svg.zip · index.json
   iconoir/         iconoir-<peso>.zip (regular, solid) · index.json
+  bootstrap-icons/ bootstrap-icons-svg.zip · index.json
 licenses/          licencias de cada paquete
 catalog.json       índice general
 _headers           CORS y caché para Cloudflare Pages

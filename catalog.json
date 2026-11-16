@@ -1,6 +1,6 @@
 {
   "nombre": "axiom-assets",
-  "actualizado": "2026-11-15",
+  "actualizado": "2026-11-16",
   "base_raw": "https://raw.githubusercontent.com/Shura404/axiom-assets/main/",
   "paquetes": [
     {
@@ -156,6 +156,16 @@
         "variable": "fraunces/variable (ttf variable)",
         "ttf": "fraunces/ttf (estáticas, 36)"
       }
+    },
+    {
+      "id": "bootstrap-icons",
+      "tipo": "iconos",
+      "version": "1.13.2",
+      "licencia": "MIT",
+      "licencia_archivo": "licenses/bootstrap-icons-MIT.txt",
+      "iconos": 2079,
+      "zip": "icons/bootstrap-icons/bootstrap-icons-svg.zip",
+      "indice": "icons/bootstrap-icons/index.json"
     }
   ]
 }
